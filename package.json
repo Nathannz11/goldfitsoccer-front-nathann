@@ -4,7 +4,8 @@
   "private": true,
   "proxy": "http://localhost:8000",
   "engines": {
-    "node": "20.09.0"
+    "node": "20.09.0",
+    "npm": "10.2.2"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.4",
