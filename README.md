@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GOLDFIT SOCCER: Intelligent Talent Identification System in Football
 
 The system to be developed consists of a model for diagnosing the sporting potential of young footballers. Serving as an online statistical tool to support coaches' decisions regarding the identification, selection and development of talents for Brazilian football, allowing the issuance of individualized reports and management reports.
@@ -19,3 +20,6 @@ The system to be developed consists of a model for diagnosing the sporting poten
 - [ ] retirar o fundo verde e colocar a letra em preto
 - [ ] Aumentar a fonte das variáveis nos gráficos
 - [ ] Utilizar React Query para buscar dados da API
+=======
+# goldfitsoccer-front-nathann
+>>>>>>> 26ba812290e3d00b9d9bbff2b513ada5b76ef698
