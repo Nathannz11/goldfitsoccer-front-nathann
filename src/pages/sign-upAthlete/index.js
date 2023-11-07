@@ -113,6 +113,7 @@ export default function SignUpAthlete() {
         headers: {
           "Content-Type": "application/json",
           "Authorization": 'Bearer ' + String(authToken.access),
+          "Referer": "https://goldfitsoccer-front-test-f791e216d7db.herokuapp.com/",
         },
       })
 
