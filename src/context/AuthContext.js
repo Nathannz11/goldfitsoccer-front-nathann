@@ -22,6 +22,7 @@ export const AuthProvider = ({children}) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'Referer': 'https://goldfitsoccer-front-test-f791e216d7db.herokuapp.com/',
       },
       body: JSON.stringify({
         'username': event.target.username.value, 
@@ -55,6 +56,7 @@ export const AuthProvider = ({children}) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'Referer': 'https://goldfitsoccer-front-test-f791e216d7db.herokuapp.com/',
       },
       body: JSON.stringify({
         'refresh': authToken.refresh 

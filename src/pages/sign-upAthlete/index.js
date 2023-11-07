@@ -109,11 +109,11 @@ export default function SignUpAthlete() {
 
   async function createNewAthlete(data) {
     try {
-      let response = await api.post("admin/api/atleta/", data, {
+      let response = await api.post("api/atleta/", data, {
         headers: {
           "Content-Type": "application/json",
           "Authorization": 'Bearer ' + String(authToken.access),
-          "Referer": "https://goldfitsoccer-front-test-f791e216d7db.herokuapp.com/",
+          'Referer': 'https://goldfitsoccer-front-test-f791e216d7db.herokuapp.com/',
         },
       })
 
