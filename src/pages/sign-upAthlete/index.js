@@ -109,7 +109,7 @@ export default function SignUpAthlete() {
 
   async function createNewAthlete(data) {
     try {
-      let response = await api.post("api/atleta/", data, {
+      let response = await api.post("admin/api/atleta/", data, {
         headers: {
           "Content-Type": "application/json",
           "Authorization": 'Bearer ' + String(authToken.access),
