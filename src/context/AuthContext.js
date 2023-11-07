@@ -18,7 +18,7 @@ export const AuthProvider = ({children}) => {
     event.preventDefault();
     console.log('submitted form')
 
-    let response = await fetch(process.env.API_URL+'/api/token/', {
+    let response = await fetch(`${process.env.API_URL}/api/token/` , {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ export const AuthProvider = ({children}) => {
   }
 
   let updateToken = async ()=> {
-    let response = await fetch(process.env.API_URL+'/api/token/refresh/', {
+    let response = await fetch(`${process.env.API_URL}/api/token/refresh/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
