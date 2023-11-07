@@ -12,7 +12,7 @@ axios.defaults.xsrfCookieName = 'csrftoken'
 axios.defaults.xsrfHeaderName = 'X-CSRFToken'
 
 const api = axios.create ({
-    baseURL: process.env.API_URL
+    baseURL: `${process.env.API_URL}/admin`
 });
 
 
