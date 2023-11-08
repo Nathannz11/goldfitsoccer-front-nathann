@@ -109,13 +109,24 @@ export default function SignUpAthlete() {
 
   async function createNewAthlete(data) {
     try {
-      let response = await api.post("api/atleta/", data, {
+      /*let response = await api.post("api/atleta/", data, {
         headers: {
           "Content-Type": "application/json",
           "Authorization": 'Bearer ' + String(authToken.access),
           'Referer': 'https://goldfitsoccer-front-test-f791e216d7db.herokuapp.com/',
         },
-      })
+      })*/
+
+      let response = await fetch("https://goldfitsoccer-test-02f0da80e648.herokuapp.com/admin/api/atleta/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": 'Bearer ' + String(authToken.access),
+          'Referer': 'https://goldfitsoccer-front-test-f791e216d7db.herokuapp.com/'
+        },
+        referrerPolicy: "unsafe-url", // Add this line
+        body: JSON.stringify(data)
+      });
 
       if (response.status === 201) {
         history.push("/cadastro-sucesso");
