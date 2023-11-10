@@ -109,10 +109,13 @@ export default function SignUpAthlete() {
 
   async function createNewAthlete(data) {
     try {
+      const csrfToken = getCookie('csrftoken');
+
       let response = await api.post("api/atleta/", data, {
         headers: {
           "Content-Type": "application/json",
           "Authorization": 'Bearer ' + String(authToken.access),
+          "X-CSRFToken": csrfToken,
           'Referer': 'https://goldfitsoccer-front-test-f791e216d7db.herokuapp.com/cadastro-atleta',
         },
       })
@@ -126,6 +129,13 @@ export default function SignUpAthlete() {
       alert("Erro ao cadastrar o atleta, tente novamente!");
       logoutUser();
     }
+  }
+
+// Function to get the value of a cookie by name
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
   }
 
   const formik = useFormik({
