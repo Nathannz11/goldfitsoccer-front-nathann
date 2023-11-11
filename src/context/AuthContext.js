@@ -50,8 +50,8 @@ export const AuthProvider = ({children}) => {
     history.push('/');
   }
 
- /* let updateToken = async ()=> {
-    let response = await fetch(`https://goldfitsoccer-test-02f0da80e648.herokuapp.com/api/token/refresh/`, {
+  let updateToken = async ()=> {
+    let response = await fetch(`https://goldfitsoccer-test-02f0da80e648.herokuapp.com/api/token/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -75,15 +75,15 @@ export const AuthProvider = ({children}) => {
       setLoading(false);
     }
   }
-*/
+
   let contextData = {
     authToken: authToken,
     user: user,
     loginUser: loginUser,
     logoutUser: logoutUser,
-    //updateToken: updateToken
+    updateToken: updateToken
   }
-/*
+
   useEffect(() => {
     if (loading){
       updateToken();
@@ -98,7 +98,7 @@ export const AuthProvider = ({children}) => {
 
     return () => clearInterval(intervalID);
   }, [authToken, loading]);
-*/
+
   return (
       <AuthContext.Provider value={contextData}>
           {children}
