@@ -115,7 +115,7 @@ export default function SignUpAthlete() {
       let response = await api.post("api/atleta/", data, {
         headers: {
           "Content-Type": "application/json",
-          "Authorization": 'Bearer ' + String(authToken.access),
+          "Authorization": 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NjU0OTc0LCJpYXQiOjE2OTk0OTE4MzEsImp0aSI6IjAzNzQ4ZjRhMzI0ZTQ0ZmJhNTViOTlkNTNhZDQ1YTdmIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJuYXRoYW5uemluaSIsImlkIjoxfQ.c6nCmX11xVPMBKD0DQhDBA2EGAlUHQ_3TVdoUEu34d4', //+ String(authToken.access),
           "X-CSRFToken": csrfToken,
           'Referer': 'https://goldfitsoccer-front-test-f791e216d7db.herokuapp.com/cadastro-atleta',
         },
