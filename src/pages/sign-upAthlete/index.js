@@ -163,7 +163,7 @@ export default function SignUpAthlete() {
         <img className="img-logo-sign-up-athlete" src={Logo} alt="logo" />
         
         <form className="formulario" onSubmit={formik.handleSubmit}>
-        {% csrf_token %}
+        
           <section className="input-section-signupathlete">
             <div className="athlete-form-input">
               <TextField
