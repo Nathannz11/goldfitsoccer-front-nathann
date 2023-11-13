@@ -110,7 +110,7 @@ export default function SignUpAthlete() {
   async function createNewAthlete(data) {
     try {
       const csrfToken = getCookie('csrftoken');
-
+      console.log(error);
       let response = await api.post("api/atleta/", data, {
         headers: {
           "Content-Type": "application/json",
@@ -163,6 +163,7 @@ export default function SignUpAthlete() {
         <img className="img-logo-sign-up-athlete" src={Logo} alt="logo" />
         
         <form className="formulario" onSubmit={formik.handleSubmit}>
+        {% csrf_token %}
           <section className="input-section-signupathlete">
             <div className="athlete-form-input">
               <TextField
@@ -339,7 +340,7 @@ export default function SignUpAthlete() {
             
              <ButtonFilledCancel className="btn-cancel-component" text="Sair" route="/menu" />
           </section>
-
+          
         </form>
       </div>
     </section>

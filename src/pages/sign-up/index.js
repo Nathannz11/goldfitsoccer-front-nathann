@@ -20,7 +20,7 @@ export default function SignUp(){
     return (
         <div className="container">
             <img className="img-logo" src={Logo} alt="logo"/>
-            <div className="form">
+            <div className="form"> 
                 <section>
                     <div className="input-name">
                         <TextField className="text-field" id="outlined-basic" label="Nome Completo" variant="outlined" />

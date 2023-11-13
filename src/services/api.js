@@ -14,6 +14,7 @@ axios.defaults.xsrfHeaderName = 'X-CSRFTOKEN'
 const api = axios.create ({
     //baseURL: `${process.env.API_URL}/admin`
     baseURL: `https://goldfitsoccer-test-02f0da80e648.herokuapp.com/admin`
+    //baseURL: 'http://localhost:8000/admin'
 });
 
 export default api;
