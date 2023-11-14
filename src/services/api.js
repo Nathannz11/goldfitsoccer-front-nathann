@@ -12,7 +12,7 @@ import axios from "axios";
 
 const api = axios.create ({
     //baseURL: `${process.env.API_URL}/admin`
-    baseURL: `https://goldfitsoccer-test-02f0da80e648.herokuapp.com/admin`
+    baseURL: `https://goldfitsoccer-test-02f0da80e648.herokuapp.com`
     //baseURL: 'http://localhost:8000/admin'
 });
 
