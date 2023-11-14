@@ -7,6 +7,7 @@ import * as AiIcons from 'react-icons/ai';
 import { AiOutlineMenu } from "react-icons/ai";
 import Logo from './../../_assets/logo.png'
 
+import AuthContext from '../../context/AuthContext';
 
 
 import './styles.css'
@@ -48,6 +49,7 @@ const SidebarWrap = styled.div`
 
 const Sidebar = () => {
   const [sidebar, setSidebar] = useState(false);
+  const { logoutUser } = useContext(AuthContext);
 
   const showSidebar = () => setSidebar(!sidebar);
 
