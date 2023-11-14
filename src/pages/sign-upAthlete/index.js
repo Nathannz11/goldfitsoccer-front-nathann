@@ -110,7 +110,7 @@ export default function SignUpAthlete() {
   async function createNewAthlete(data) {
     try {
       const csrftoken = getCookie('csrftoken')
-      console.log(csrftoken);
+      console.log(csrftoken)
       let response = await api.post("api/atleta/", data, {
         headers: {
           "Content-Type": "application/json",
