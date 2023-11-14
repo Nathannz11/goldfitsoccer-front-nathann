@@ -38,23 +38,23 @@ export default function Routes(){
                     <Route path="/sign-up" component={SignUp}/>
                     <Route path="/sign-upGuest" component={SignUpGuest}/>
                     <Route path="/modal" component={ModalConfirmation}/>
-                    <PrivateRoutes path="/menu" component={SelectionMenu}/>
-                    <PrivateRoutes path="/cadastro-atleta" component={SignUpAthlete}/>
-                    <PrivateRoutes path="/cadastro-sucesso" component={ModalConfirmationRegistry}/>
-                    <PrivateRoutes path="/cadastro-atleta-2" component={SignUpAthlete2}/>
-                    <PrivateRoutes path="/evaluateAthlete1" component={EvaluateAthlete1}/>
-                    <PrivateRoutes path="/evaluateAthlete2" component={EvaluateAthlete2}/>
-                    <PrivateRoutes path="/evaluateAthlete3" component={EvaluateAthlete3}/>
-                    <PrivateRoutes path="/evaluateAthlete4" component={EvaluateAthlete4}/>
-                    <PrivateRoutes path="/formAthlete1" component={FormAthlete1}/>
-                    <PrivateRoutes path="/formAthlete2" component={FormAthlete2}/>
-                    <PrivateRoutes path="/formAthlete3" component={FormAthlete3}/>
-                    <PrivateRoutes path="/formAthlete4" component={FormAthlete4}/>
-                    <PrivateRoutes path="/formAthlete5" component={FormAthlete5}/>
-                    <PrivateRoutes path="/formAthlete6" component={FormAthlete6}/>
-                    <PrivateRoutes path="/avaliacao-potencial-esportivo" component={GraphSportsPotential} />
-                    <PrivateRoutes path="/dados-atleta" component={AthleteData} />
-                    <PrivateRoutes path="/home" component={Home}/>
+                    <Route path="/menu" component={SelectionMenu}/>
+                    <Route path="/cadastro-atleta" component={SignUpAthlete}/>
+                    <Route path="/cadastro-sucesso" component={ModalConfirmationRegistry}/>
+                    <Route path="/cadastro-atleta-2" component={SignUpAthlete2}/>
+                    <Route path="/evaluateAthlete1" component={EvaluateAthlete1}/>
+                    <Route path="/evaluateAthlete2" component={EvaluateAthlete2}/>
+                    <Route path="/evaluateAthlete3" component={EvaluateAthlete3}/>
+                    <Route path="/evaluateAthlete4" component={EvaluateAthlete4}/>
+                    <Route path="/formAthlete1" component={FormAthlete1}/>
+                    <Route path="/formAthlete2" component={FormAthlete2}/>
+                    <Route path="/formAthlete3" component={FormAthlete3}/>
+                    <Route path="/formAthlete4" component={FormAthlete4}/>
+                    <Route path="/formAthlete5" component={FormAthlete5}/>
+                    <Route path="/formAthlete6" component={FormAthlete6}/>
+                    <Route path="/avaliacao-potencial-esportivo" component={GraphSportsPotential} />
+                    <Route path="/dados-atleta" component={AthleteData} />
+                    <Route path="/home" component={Home}/>
                 </AuthProvider>
             </Switch>
         </BrowserRouter>
