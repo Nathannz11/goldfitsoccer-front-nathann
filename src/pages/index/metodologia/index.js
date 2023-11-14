@@ -6,7 +6,7 @@ import ButtonFilled from '../../../_components/button';
 
 export default function Metodologia () {
   return (
-    <section className='metodologia' >
+    <section id='metodologia' className='metodologia' >
         <h4>Metodologia</h4>
         <h3>Conheça o protocolo de testes do GoldFit Soccer ®</h3>
         <p>

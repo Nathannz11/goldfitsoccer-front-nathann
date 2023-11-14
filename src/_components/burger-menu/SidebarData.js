@@ -6,8 +6,12 @@ import * as RiIcons from 'react-icons/ri';
 import * as BsIcons from 'react-icons/bs';
 import * as HiIcons from 'react-icons/hi';
 import * as CgIcons from 'react-icons/cg';
+import AuthContext from '../../context/AuthContext';
+const { logoutUser } = useContext(AuthContext);
+
 
 export const SidebarData = [
+  
   {
     title: 'Inicio',
     path: '/menu',
@@ -107,6 +111,7 @@ export const SidebarData = [
     {
     title: 'Sair',
     path: '/',
+    onClick: logoutUser(),
     icon: <AiIcons.AiOutlineCloseCircle />
   }
 ];

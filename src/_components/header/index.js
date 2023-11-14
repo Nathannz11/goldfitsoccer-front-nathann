@@ -10,7 +10,7 @@ export default function Header() {
             <img src={Logo} alt="logo" id="header-image"/>
                 <section className="navigation">
                     <a href="/#section-1" className="nav-item">Início</a> 
-                    <a href="/#section-2" className="nav-item">O que é?</a> 
+                    <a href="/#o-que-e" className="nav-item">O que é?</a> 
                     <a href="/#vantagens" className="nav-item">Vantagens</a> 
                     <a href="/#metodologia" className="nav-item">Metodologia</a> 
                     <a href="/#sobre-o-sistema" className="nav-item">Sobre o Sistema</a> 

@@ -6,7 +6,7 @@ import checkmark from "../../../_assets/checkmark.svg";
 
 export default function Sobre() {
 	return (
-		<section className="sobre">
+		<section id="sobre-o-sistema" className="sobre">
 			<div className="sobre-text-content">
 				<h4>Sobre o Sistema</h4>
 				<h3>

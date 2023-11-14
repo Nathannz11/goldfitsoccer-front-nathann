@@ -7,6 +7,8 @@ import * as AiIcons from 'react-icons/ai';
 import { AiOutlineMenu } from "react-icons/ai";
 import Logo from './../../_assets/logo.png'
 
+
+
 import './styles.css'
 
 const Nav = styled.div`

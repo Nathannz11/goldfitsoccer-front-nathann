@@ -6,7 +6,7 @@ import logo from '../../../_assets/report_analysis_ 1.svg';
 export default function Descricao() {
     return (
       <section>
-        <div className='descricao-content'> 
+        <div id='o-que-e' className='descricao-content'> 
           <img src={logo} alt="Logo do sistema Goldfit Soccer." />
           <div className='descricao-text-content'>
             <h4>O que é?</h4>
