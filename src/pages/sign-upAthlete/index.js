@@ -109,7 +109,6 @@ export default function SignUpAthlete() {
 
   async function createNewAthlete(data) {
     try {
-      authToken.updateToken
       const csrftoken = getCookie('csrftoken')
       console.log(csrftoken);
       let response = await api.post("api/atleta/", data, {
@@ -172,7 +171,7 @@ export default function SignUpAthlete() {
     <section className="sign-up-atlhete-container">
       <div className="form-container-sign-up-atlhete">
         <img className="img-logo-sign-up-athlete" src={Logo} alt="logo" />
-        
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
         <form className="formulario" onSubmit={formik.handleSubmit}>
           <section className="input-section-signupathlete">
             <div className="athlete-form-input">
