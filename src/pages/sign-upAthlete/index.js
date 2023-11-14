@@ -114,7 +114,7 @@ export default function SignUpAthlete() {
       let response = await api.post("api/atleta/", data, {
         headers: {
           "Content-Type": "application/json",
-          "Authorization": 'Bearer ' + String(authToken.user),
+          "Authorization": 'Bearer ' + String(authToken.access),
           "X-CSRFToken": csrftoken,                                
           'Referer': 'https://goldfitsoccer-front-test-f791e216d7db.herokuapp.com/',
         },
