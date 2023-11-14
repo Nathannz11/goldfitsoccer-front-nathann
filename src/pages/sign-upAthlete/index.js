@@ -109,12 +109,12 @@ export default function SignUpAthlete() {
 
   async function createNewAthlete(data) {
     try {
-      const csrftoken = getCookie('csrftoken');
+      const csrftoken = getCookie('csrftoken')
       let response = await api.post("api/atleta/", data, {
         headers: {
           "Content-Type": "application/json",
           "Authorization": 'Bearer ' + String(authToken.access),
-          "X-CSRFToken": csrfToken,                                
+          "X-CSRFToken": csrftoken,                                
           'Referer': 'https://goldfitsoccer-front-test-f791e216d7db.herokuapp.com/cadastro-atleta',
         },
       })
@@ -130,7 +130,7 @@ export default function SignUpAthlete() {
     }
   }
 
-// Function to get the value of a cookie by name
+  // Function to get the value of a cookie by name
   function getCookie(name) {
     let cookieValue = null;
     if (document.cookie && document.cookie !== '') {
