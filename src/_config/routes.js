@@ -3,6 +3,7 @@ import React from 'react'
 
 import PrivateRoutes from '../utils/PrivateRoutes';
 import Login from '../pages/login';
+import Logout from '../pages/logout';
 import LoginCreditals from '../pages/login-credentials';
 import SignUp from '../pages/sign-up';
 import Home from '../pages/home';
@@ -35,6 +36,7 @@ export default function Routes(){
                     <Route path="/" exact component={Index}/>
                     <Route path="/login-as" component={Login}/>
                     <Route path="/login-credentials" component={LoginCreditals}/>
+                    <Route path="/logout" component={Logout}/>
                     <Route path="/sign-up" component={SignUp}/>
                     <Route path="/sign-upGuest" component={SignUpGuest}/>
                     <Route path="/modal" component={ModalConfirmation}/>
