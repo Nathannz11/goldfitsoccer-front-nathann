@@ -108,7 +108,7 @@ export const SidebarData = [
   },
     {
     title: 'Sair',
-    path: '/',
+    path: '/logout',
     icon: <AiIcons.AiOutlineCloseCircle />
   }
 ];
