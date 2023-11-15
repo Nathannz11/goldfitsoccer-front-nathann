@@ -14,7 +14,7 @@ export default function Header() {
                     <a href="/#vantagens" className="nav-item">Vantagens</a> 
                     <a href="/#metodologia" className="nav-item">Metodologia</a> 
                     <a href="/#sobre-o-sistema" className="nav-item">Sobre o Sistema</a> 
-                    <a href="/#section-6" className="nav-item">Contato</a> 
+                    <a href="/#sobre-o-sistema" className="nav-item">Contato</a> 
                 </section>
         </header>
 )}
