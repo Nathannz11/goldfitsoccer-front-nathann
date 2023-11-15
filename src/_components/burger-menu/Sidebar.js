@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import React, { useContext } from "react";
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
@@ -50,6 +51,8 @@ const SidebarWrap = styled.div`
 const Sidebar = () => {
   const [sidebar, setSidebar] = useState(false);
   const { logoutUser } = useContext(AuthContext);
+  //quero dicionar o logoutUser();
+
 
   const showSidebar = () => setSidebar(!sidebar);
 
