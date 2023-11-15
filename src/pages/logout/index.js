@@ -1,5 +1,6 @@
 import AuthContext from '../../context/AuthContext';
 import { useHistory } from 'react-router-dom';
+import { useEffect, useContext } from "react";
 
 export default function Logout() {
 
